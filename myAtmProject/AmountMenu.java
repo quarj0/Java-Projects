@@ -4,7 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class Statement {
+public class AmountMenu {
 
 	private JFrame frame;
 
@@ -15,7 +15,7 @@ public class Statement {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Statement window = new Statement();
+					AmountMenu window = new AmountMenu();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -27,7 +27,7 @@ public class Statement {
 	/**
 	 * Create the application.
 	 */
-	public Statement() {
+	public AmountMenu() {
 		initialize();
 	}
 
@@ -36,7 +36,6 @@ public class Statement {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setResizable(false);
 		frame.setBounds(100, 100, 700, 500);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
