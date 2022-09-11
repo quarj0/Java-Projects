@@ -3,6 +3,8 @@ package myAtmProject;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.Color;
 
 public class AmountMenu {
 
@@ -36,8 +38,16 @@ public class AmountMenu {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 700, 500);
+		frame.getContentPane().setBackground(new Color(0, 128, 128));
+		frame.setResizable(false);
+		frame.setBounds(100, 100, 806, 500);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(255, 255, 255));
+		panel.setBounds(10, 11, 770, 439);
+		frame.getContentPane().add(panel);
 	}
 
 }

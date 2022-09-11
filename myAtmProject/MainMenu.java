@@ -48,14 +48,14 @@ public class MainMenu {
 		frmJGroupAtm.getContentPane().setBackground(new Color(0, 128, 128));
 		frmJGroupAtm.setTitle("J GROUP ATM");
 		frmJGroupAtm.setResizable(false);
-		frmJGroupAtm.setBounds(100, 100, 700, 500);
+		frmJGroupAtm.setBounds(100, 100, 806, 500);
 		frmJGroupAtm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmJGroupAtm.getContentPane().setLayout(null);
 		
 		JPanel mainPanel = new JPanel();
 		mainPanel.setBorder(new TitledBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null), "Main Menu", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-		mainPanel.setBackground(new Color(255, 255, 255));
-		mainPanel.setBounds(10, 11, 664, 439);
+		mainPanel.setBackground(new Color(248, 248, 255));
+		mainPanel.setBounds(10, 11, 770, 439);
 		frmJGroupAtm.getContentPane().add(mainPanel);
 		mainPanel.setLayout(null);
 		
@@ -66,7 +66,7 @@ public class MainMenu {
 			}
 		});
 		btnCancel.setBackground(Color.RED);
-		btnCancel.setBounds(200, 366, 101, 34);
+		btnCancel.setBounds(248, 366, 101, 34);
 		mainPanel.add(btnCancel);
 		
 		JButton btnOk = new JButton("OK");
@@ -76,7 +76,7 @@ public class MainMenu {
 			}
 		});
 		btnOk.setBackground(new Color(50, 205, 50));
-		btnOk.setBounds(373, 366, 101, 34);
+		btnOk.setBounds(413, 366, 101, 34);
 		mainPanel.add(btnOk);
 		
 		JButton btnBack = new JButton("Back");
@@ -88,7 +88,7 @@ public class MainMenu {
 		btnBack.setForeground(Color.WHITE);
 		btnBack.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		btnBack.setBackground(Color.BLUE);
-		btnBack.setBounds(532, 301, 101, 34);
+		btnBack.setBounds(638, 300, 101, 34);
 		mainPanel.add(btnBack);
 		
 		JButton btnCheck = new JButton("Check Balance");
@@ -104,6 +104,11 @@ public class MainMenu {
 		mainPanel.add(btnCheck);
 		
 		JButton btnWithdraw = new JButton("Withdrawal");
+		btnWithdraw.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Withdraw.main(null);
+			}
+		});
 		btnWithdraw.setForeground(new Color(255, 255, 255));
 		btnWithdraw.setBackground(new Color(30, 144, 255));
 		btnWithdraw.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -111,6 +116,11 @@ public class MainMenu {
 		mainPanel.add(btnWithdraw);
 		
 		JButton btnTransfer = new JButton("Transfer");
+		btnTransfer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Transfer.main(null);
+			}
+		});
 		btnTransfer.setForeground(new Color(255, 255, 255));
 		btnTransfer.setBackground(new Color(30, 144, 255));
 		btnTransfer.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -118,24 +128,38 @@ public class MainMenu {
 		mainPanel.add(btnTransfer);
 		
 		JButton btnCardless = new JButton("Cardless Withdrawal");
+		btnCardless.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnCardless.setForeground(new Color(255, 255, 255));
 		btnCardless.setBackground(new Color(30, 144, 255));
 		btnCardless.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnCardless.setBounds(422, 196, 197, 36);
+		btnCardless.setBounds(542, 197, 197, 36);
 		mainPanel.add(btnCardless);
 		
 		JButton btnMini = new JButton("Mini Statement");
+		btnMini.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+//				miniStatement.main(null);
+			}
+		});
 		btnMini.setForeground(new Color(255, 255, 255));
 		btnMini.setBackground(new Color(30, 144, 255));
 		btnMini.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnMini.setBounds(461, 63, 158, 34);
+		btnMini.setBounds(581, 63, 158, 34);
 		mainPanel.add(btnMini);
 		
 		JButton btnStatement = new JButton("Statement");
+		btnStatement.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Statement.main(null);
+			}
+		});
 		btnStatement.setForeground(new Color(255, 255, 255));
 		btnStatement.setBackground(new Color(30, 144, 255));
 		btnStatement.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnStatement.setBounds(461, 126, 158, 36);
+		btnStatement.setBounds(581, 126, 158, 36);
 		mainPanel.add(btnStatement);
 	}
 }

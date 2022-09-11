@@ -45,13 +45,13 @@ public class CheckBalance {
 		frmJGroupAtm.getContentPane().setBackground(new Color(0, 128, 128));
 		frmJGroupAtm.setTitle("J GROUP ATM");
 		frmJGroupAtm.setResizable(false);
-		frmJGroupAtm.setBounds(100, 100, 700, 500);
+		frmJGroupAtm.setBounds(100, 100, 806, 500);
 		frmJGroupAtm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmJGroupAtm.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(255, 255, 255));
-		panel.setBounds(10, 11, 664, 439);
+		panel.setBounds(10, 11, 770, 439);
 		frmJGroupAtm.getContentPane().add(panel);
 		panel.setLayout(null);
 		
@@ -62,12 +62,12 @@ public class CheckBalance {
 			}
 		});
 		btnCancel.setBackground(Color.RED);
-		btnCancel.setBounds(216, 362, 101, 34);
+		btnCancel.setBounds(256, 362, 101, 34);
 		panel.add(btnCancel);
 		
 		JButton btnOk = new JButton("OK");
 		btnOk.setBackground(new Color(50, 205, 50));
-		btnOk.setBounds(352, 362, 101, 34);
+		btnOk.setBounds(405, 362, 101, 34);
 		panel.add(btnOk);
 		
 		JButton btnBack = new JButton("Back");
@@ -79,7 +79,7 @@ public class CheckBalance {
 		btnBack.setForeground(Color.WHITE);
 		btnBack.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		btnBack.setBackground(Color.BLUE);
-		btnBack.setBounds(516, 276, 101, 34);
+		btnBack.setBounds(621, 321, 101, 34);
 		panel.add(btnBack);
 		
 		JButton btnSavings = new JButton("Savings Account");
@@ -100,7 +100,7 @@ public class CheckBalance {
 		btnFixedDepositAccount.setForeground(Color.WHITE);
 		btnFixedDepositAccount.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		btnFixedDepositAccount.setBackground(new Color(47, 79, 79));
-		btnFixedDepositAccount.setBounds(425, 77, 207, 34);
+		btnFixedDepositAccount.setBounds(515, 77, 207, 34);
 		panel.add(btnFixedDepositAccount);
 	}
 

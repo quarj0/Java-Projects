@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.Color;
 
-public class Statement {
+public class miniStatement {
 
 	private JFrame frame;
 
@@ -17,7 +17,7 @@ public class Statement {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Statement window = new Statement();
+					miniStatement window = new miniStatement();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -29,7 +29,7 @@ public class Statement {
 	/**
 	 * Create the application.
 	 */
-	public Statement() {
+	public miniStatement() {
 		initialize();
 	}
 

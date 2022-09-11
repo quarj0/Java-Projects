@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.TitledBorder;
-import java.awt.Choice;
+
 
 public class Verification {
 
@@ -53,14 +53,14 @@ public class Verification {
 		frmJGroupAtm.setResizable(false);
 		frmJGroupAtm.setBackground(new Color(128, 128, 128));
 		frmJGroupAtm.getContentPane().setBackground(new Color(0, 128, 128));
-		frmJGroupAtm.setBounds(100, 100, 700, 500);
+		frmJGroupAtm.setBounds(100, 100, 806, 500);
 		frmJGroupAtm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmJGroupAtm.getContentPane().setLayout(null);
 		
 		JPanel verifyPAnel = new JPanel();
 		verifyPAnel.setBackground(new Color(255, 255, 255));
 		verifyPAnel.setBorder(new TitledBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null), "Verification", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-		verifyPAnel.setBounds(10, 11, 664, 439);
+		verifyPAnel.setBounds(10, 11, 770, 439);
 		frmJGroupAtm.getContentPane().add(verifyPAnel);
 		verifyPAnel.setLayout(null);
 		
@@ -72,7 +72,7 @@ public class Verification {
 			}
 		});
 		btnVerify.setIcon(new ImageIcon(Verification.class.getResource("/image/fingerprint.gif")));
-		btnVerify.setBounds(189, 103, 285, 294);
+		btnVerify.setBounds(248, 97, 285, 294);
 		verifyPAnel.add(btnVerify);
 		
 		JLabel txtVerify = new JLabel("Please verify your account!");
