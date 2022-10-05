@@ -7,3 +7,12 @@
 
 # ATM project 
 <p>updated but will further update again</p>
+
+## Projects added
+
+<ul>
+<li>Sorting algorithm</li>
+<li>Finding the best route between to points</li>
+<li>Learn Switch Cases</li>
+<li>more will come later</li>
+</ul>
