@@ -14,5 +14,5 @@
 <li>Sorting algorithm</li>
 <li>Finding the best route between to points</li>
 <li>Learn Switch Cases</li>
-<li>more will come later</li>
+<li>OOP</li>
 </ul>
